@@ -15,7 +15,7 @@ function App() {
     setLoading(true)
 
     try {
-      const res = await fetch('http://localhost:5000/api/chat/message', {
+      const res = await fetch('https://myra-bpdd.onrender.com/api/chat/message', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message: userMessage }),
