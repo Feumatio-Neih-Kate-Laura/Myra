@@ -1,7 +1,6 @@
 import OpenAI from 'openai';
 import { MYRA_SYSTEM_PROMPT } from '../personality/myra.prompt.js';
-import { saveMessage, getRecentMessages } from '../models/message.js';
-
+import { saveMessage, getRecentMessages } from '../models/Message.js';
 export const getMyraReply = async (userMessage) => {
   const client = new OpenAI({
     apiKey: process.env.OPENROUTER_API_KEY,
